@@ -1,0 +1,75 @@
+export default {
+    name:'caseStudy',
+    title:'CaseStudy',
+    type: 'document',
+    fields:[
+        { 
+            name:'name',
+            title:'Name',
+            type: 'string'
+        },
+        {
+            name:'brief',
+            title:'Brief',
+            type:'string'
+        },
+         {
+            name:'context',
+            title:'Context',
+            type:'string'
+        },
+         {
+            name:'problem',
+            title:'Problem',
+            type:'string'
+        },
+         {
+            name:'solution',
+            title:'Solution',
+            type:'string'
+        },
+         {
+            name:'usp',
+            title:'Usp',
+            type:'string'
+        },
+         {
+            name:'challenge',
+            title:'Challenge',
+            type:'string'
+        },
+         {
+            name:'experience',
+            title:'Experience',
+            type:'string'
+        },
+        {
+            name:'illustration',
+            title:'Illustration',
+            type:'string'
+        },
+        {
+            name:'exhibit',
+            title:'Exhibit',
+            type:'string'
+        },
+         {
+            name:'mobile',
+            title:'Mobile',
+            type:'string'
+        },
+         {
+            name:'outcome',
+            title:'Outcome',
+            type:'string'
+        },
+        {
+            name:'bgimgurl',
+            title:'BgimgUrl',
+            type: 'image',
+            options: {
+              hotspot: true,
+            },
+        },
+    ]
+}
