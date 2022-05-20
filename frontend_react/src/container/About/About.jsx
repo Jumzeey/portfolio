@@ -21,7 +21,7 @@ const About = () => {
       <h2 className='head-text'>
         I Know that
         <span> Good Apps </span><br/>
-         means
+         mean
          <span> Good Business</span>
       </h2>
 
