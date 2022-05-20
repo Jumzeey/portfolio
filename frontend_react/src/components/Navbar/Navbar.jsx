@@ -10,8 +10,9 @@ const Navbar = () => {
       <div className='app__navbar-logo'>
         <img src={ images.logo} alt="jumzeey.logo" />
       </div>
+       {/* make sure to add casestudy latert */}
       <ul className="app__navbar-links">
-        {['home', 'about','work','skills','testimonial','case study','contact'].map((item) => (
+        {['home', 'about','work','skills','testimonial','contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>

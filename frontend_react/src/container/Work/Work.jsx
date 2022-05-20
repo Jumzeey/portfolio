@@ -2,8 +2,10 @@ import React, { useState, useEffect}  from 'react'
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from '../../wrapper/AppWrap';
+import motionWrap from '../../wrapper/motionWrap';
 import { urlFor, client } from "../../client";
 import './Work.scss';
+
 const Work = () => {
 
   const [activeFilter, setActiveFilter] = useState('All');
@@ -44,7 +46,7 @@ const Work = () => {
         <span> Portfolio </span>
       </h2>
       <div className="app__work-filter">
-        {[ 'Real Estate', 'Resturants', 'Agriculture', 'Fintech', 'Logistics','Entertainment', 'All'].map( (item, index) => (
+        {[ 'Real Estate', 'Resturants', 'Agriculture', 'Fintech', 'Ecommerce ','Entertainment', 'All'].map( (item, index) => (
           <div
             key={index}
             onClick={ ()=> handleWorkFilter(item)}
@@ -107,4 +109,8 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work')
+export default AppWrap(
+  motionWrap(Work, 'app__works'),
+   'work',
+   'app__primarybg'
+   )
