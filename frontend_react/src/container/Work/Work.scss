@@ -1,9 +1,13 @@
-.app__works{
+a{
+    text-decoration: none;
+}
+.app__works {
     flex: 1;
     width: 100%;
     flex-direction: column;
 }
-.app__work-filter{
+
+.app__work-filter {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,7 +15,7 @@
     flex-wrap: wrap;
     margin: 4rem 0 2rem;
 
-    .app__work-filter-item{
+    .app__work-filter-item {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         background-color: #fff;
@@ -21,7 +25,7 @@
         transition: all 0.3s ease;
         margin: 0.5rem;
 
-        &:hover{
+        &:hover {
             background-color: var(--secondary-color);
             color: #fff;
         }
@@ -31,19 +35,54 @@
             border-radius: 0.85rem;
         }
     }
-    .item-active{
+
+    .item-active {
         background-color: var(--secondary-color);
         color: #fff;
     }
 }
 
-.app__work-portfolio{
+.work_link {
+    text-decoration: none;
+}
+
+.empty-category-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--gray-color);
+    line-height: 1.5;
+
+    span {
+        cursor: pointer;
+        background: linear-gradient(to left, #009D90, #00DDB3);
+        border-radius: 0.5rem;
+        padding: 0.5rem 1.125rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+        transition-duration: 0.5s;
+        color: white;
+
+        a{
+            color: white;
+        }
+    }
+     /* Hover Effect */
+     :hover {
+        /* Gradient Background on Hover */
+        background: linear-gradient(to right, #009D90, #00DDB3);
+        transform: scale(1.05);
+    }
+}
+
+.app__work-portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    .app__work-item{
+    .app__work-item {
         width: 300px;
         flex-direction: column;
         margin: 2rem;
@@ -54,14 +93,16 @@
         cursor: pointer;
         transition: all 0.3s ease;
 
-        &:hover{
+        &:hover {
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
         }
+
         @media screen and (min-width: 2000px) {
             width: 500px;
             padding: 1.25rem;
             border-radius: 0.75rem;
         }
+
         @media screen and (max-width: 300px) {
             width: 100%;
             margin: 1rem;
@@ -69,23 +110,24 @@
     }
 }
 
-.app__work-img{
+.app__work-img {
     width: 100%;
     height: 230px;
     position: relative;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         border-radius: 0.5rem;
         object-fit: cover;
     }
+
     @media screen and (min-width: 2000) {
         height: 350px;
     }
 }
 
-.app__work-hover{
+.app__work-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,37 +140,38 @@
     opacity: 0;
     transition: all 0.5 ease;
 
-    div{
+    div {
         width: 50px;
         height: 50px;
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.5);
-       color: #fff;
-       margin: 1rem;
-       font-family: var(--font-base); 
-       cursor: pointer;
-       transition: all 0.5 ease;
+        color: #fff;
+        margin: 1rem;
+        font-family: var(--font-base);
+        cursor: pointer;
+        transition: all 0.5 ease;
 
-       svg{
-           width: 50%;
-           height: 50%;
-           color: var(--white-color);
-       }
+        svg {
+            width: 50%;
+            height: 50%;
+            color: var(--white-color);
+        }
     }
 }
 
-.app__work-content{
+.app__work-content {
     padding: 0.5rem;
     width: 100%;
     height: 100%;
     position: relative;
     flex-direction: column;
 
-    h4{
+    h4 {
         margin-top: 1rem;
         line-height: 1.5;
     }
-    .app__work-tag{
+
+    .app__work-tag {
         position: absolute;
         padding: 0.5rem 1rem;
         border-radius: 10px;
