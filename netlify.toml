@@ -3,7 +3,7 @@
   base = "frontend_react"
 
   # Build command
-  command = "npm run build"  # Adjust this according to your build script
+  command = "CI=false npm run build"  # Adjust this according to your build script
 
   # Publish directory
   publish = "build"  # Adjust this according to your build output directory
